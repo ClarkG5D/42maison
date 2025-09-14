@@ -21,7 +21,7 @@ int	ft_str_is_lowercase(char *str)
 	{
 	i++;
 	}
-	if ( srt[i] = '\0')
+	if ( str[i] = '\0')
 	{
 		return (1);
 	} else

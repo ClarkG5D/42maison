@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <unistd.h>
 
 char	*ft_strcpy(char *dest, char *src)
 {
@@ -28,7 +27,7 @@ char	*ft_strcpy(char *dest, char *src)
 
 int	main()
 {
-	char dest[] = "jack";
 	char src[] = "daniel";
+	char dest[sizeof(src)] = "jack";
 	printf("%s", ft_strcpy(dest, src));
 }

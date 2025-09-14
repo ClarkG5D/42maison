@@ -19,7 +19,7 @@ char	*ft_strlcpy(char *dest, char *src, unsigned int size);
 	i = 0;
 	while (src[i] != '\0' && src[i] <= src[size])
 	{
-		dest[i] = src[[i];
+		dest[i] = src[i];
 		i++;
 	}
 	dest[i] = '\0';
@@ -28,8 +28,8 @@ char	*ft_strlcpy(char *dest, char *src, unsigned int size);
 
 int main()
 {
-	char	dest[] = "jack";
 	char	src[] = "daniel";
+	char	dest[sizeof(src)] = "jack";
 	unsigned int size = 5;
 	printd("%s", ft_strlcpy());
 }

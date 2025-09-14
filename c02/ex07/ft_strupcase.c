@@ -17,14 +17,14 @@ char	*ft_strupcase(char *str)
 	int i;
 
 	i = 0;
-	while(str[i] >=(97 && str[i] <= 122)
+	while(str[i] >= 97 && str[i] <= 122)
 	{
 		i - 35;
 		i++;
 	}
 	if(str[i] = '\0')
 	{
-		return (str[]);
+		return (str);
 	}
 }
 

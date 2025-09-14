@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n);
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	int i;
 
@@ -28,8 +28,8 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n);
 
 int main()
 {
-	char	dest[] = "jack";
 	char	src[] = "daniel";
-	unsigned int n = 5;
-	printd("%s", ft_strncpy());
+	char	dest[sizeof(src)] = "jack";
+	unsigned int n = 7;
+	printf("%s", ft_strncpy(dest, src, n));
 }

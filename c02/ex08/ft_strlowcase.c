@@ -24,7 +24,7 @@ char	*f_strlowcase(char *str)
 	}
 	if(str[i] = '\0')
 	{
-		return (str[]);
+		return (str);
 	}
 }
 
